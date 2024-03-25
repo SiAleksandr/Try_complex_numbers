@@ -6,15 +6,14 @@ import homework.model.Calculable;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-
 public class Subtraction implements Calculable {
     private static List<String> questions = new ArrayList<>();
 
     static {
         questions.add("Вычитаемое - реальная часть");
-        questions.add("Вычитаемое - нимая часть");
+        questions.add("Вычитаемое - мнимая часть");
     }
+
     @Override
     public List<String> getQuestions() {
         return questions;
